@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELHADANI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(to right, #000, #333);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            perspective: 1000px;
+        }
+        h1 {
+            font-size: 3.5em;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: transform 0.1s, color 0.3s, text-shadow 0.3s;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .span1, .span2 {
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span class="span1">"Sorry this button </span>
+        <span class="span2">is not working."</span>
+    </h1>
+
+    <script>
+        const span1 = document.querySelector('.span1');
+        const span2 = document.querySelector('.span2');
+        const text = document.querySelector('h1');
+        const body = document.body;
+
+        document.addEventListener('mousemove', (event) => {
+            const { clientX: x, clientY: y } = event;
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            const xPercent = x / width - 0.5;
+            const yPercent = y / height - 0.5;
+
+            const rotateX = yPercent * 30;
+            const rotateY = xPercent * 30;
+            text.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+
+            const redIntensity = Math.min(255, Math.abs(255 - x / 3));
+            const blueIntensity = Math.min(255, Math.abs(255 - y / 3));
+
+            // More intense glow and brighter colors
+            span1.style.color = `rgb(${redIntensity}, 30, 30)`;
+            span1.style.textShadow = `
+                0 0 20px rgba(255, 0, 0, 0.8),
+                0 0 30px rgba(255, 0, 0, 0.6),
+                0 0 50px rgba(255, 0, 0, 0.4)
+            `;
+
+            span2.style.color = `rgb(30, 30, ${blueIntensity})`;
+            span2.style.textShadow = `
+                0 0 20px rgba(0, 0, 255, 0.8),
+                0 0 30px rgba(0, 0, 255, 0.6),
+                0 0 50px rgba(0, 0, 255, 0.4)
+            `;
+
+            // Enhanced background effect
+            body.style.background = `linear-gradient(to right, rgb(${redIntensity / 2}, 0, 0), rgb(0, 0, ${blueIntensity / 2}))`;
+        });
+
+        document.addEventListener('mouseleave', () => {
+            text.style.transform = `rotateX(0deg) rotateY(0deg)`;
+            span1.style.color = '';
+            span1.style.textShadow = '';
+            span2.style.color = '';
+            span2.style.textShadow = '';
+            body.style.background = 'linear-gradient(to right, #000, #333)';
+        });
+    </script>
+</body>
+</html>

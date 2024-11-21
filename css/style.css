@@ -1,0 +1,484 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-transform: capitalize;
+    background-color: #000000;
+}
+/*======================================================*/
+/*===================START+SECTION1=====================*/
+/*======================================================*/
+.section1{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+}
+/*=================================================*/
+/*===============menu-navbar-dropdown==============*/
+/*=================================================*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #710d0d;
+    z-index: 200;
+}
+#button{
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100;
+}
+#button span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #ff0000;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+#logo{
+    font-size: x-large;
+    letter-spacing: 0.5px;
+    text-shadow: white 0px 0px 20px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style:none;
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: white 0px 0px 20px;
+}
+#a:hover{
+    color: red;
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px red;
+}
+#a{
+    font-size:20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.a2{
+    display: none;
+}
+span{
+    color: red;
+    text-shadow: 0px 0px 10px red;
+}
+#contact{
+    margin-left: 10px;
+    background-color: red;
+    border: solid red 2px;
+    border-radius:10px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+#contact:hover{
+    transform: scale(1.1);
+    background-color: #000000;
+    color: red;
+    box-shadow: 0px 0px 30px red;
+}
+/*================START+DROPDOWEN=========================*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 10px;
+    min-width: 160px;
+    z-index: 50;
+ }
+ .dropdown-content a {
+    padding: 10px;
+    display:block;
+    color: white;
+ }
+ .dropdown-content a:hover {
+    background-color: #f31a1a88;
+    border-radius: 10px;
+ }
+ li:hover .dropdown-content {
+    display: block;
+ }
+/*===================FIN+DROPDOWEN=================*/
+.content1{
+    width: 100%;
+    height: 100%;
+    margin-top:5%;
+    display: flex;
+}
+.text{
+    color: aliceblue;
+    width: 50%;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+.text h1{
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 0px 0px 20px white;
+}
+.text h3{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 20px white;
+}
+.intro {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ff000043;
+    border-left: 5px solid #ff0000;
+    line-height: 1.6;
+    color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.intro h2 {
+    font-size: 1.8em;
+    color: #ff0101;
+    margin-bottom: 15px;
+}
+.intro p {
+    font-size: 1em;
+    margin: 0;
+    text-align: justify;
+}
+.socialmedia{
+    display: flex;
+    padding-top:10px ;
+    padding-bottom: 20px;
+}
+#socialmedia{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    transition: 0.4s;
+    border: transparent solid 2px;
+}
+.image{
+    width: 50%;
+    height: 100%;
+    padding-left:10% ;
+    padding-top: 3%;
+}
+.image1{
+    margin-top: 5%;
+    width: 430px;
+    border: solid 2px transparent;
+    background-color: #ff0000;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+.image1:hover{
+    background-color: #000000;
+    border: #ff0000 solid 2px;
+    box-shadow: 0px 0px 30px red;
+    transform:scale(1.1);
+}
+#socialmedia:hover{
+    transform: scale(1.1);
+    border: red solid 2px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 30px red;
+}
+.cv a h5{
+    margin-left: 10px;
+    background-color: red;
+    border: solid red;
+    border-radius:30px ;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.cv a h5:hover{
+    transform: scale(1.1);
+    border: red solid 2px;
+    color: #ff0000;
+    background-color: #000000;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px red;
+}
+
+/*===================2024/10/31====================*/
+/*===============menu-navbar-dropdown==============*/
+/*==================fin-menu=======================*/
+
+/*======================================================*/
+/*=====================FIN+SECTION1=====================*/
+/*======================================================*/
+
+/*======================================================*/
+/*===================START+SECTION2=====================*/
+/*======================================================*/
+.section2{
+    padding-top: 50px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: #ffffff;
+    height: auto;
+}
+
+.aboutme,.myskils{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+}
+.myskils{
+    padding-top:10px ;
+}
+.aboutmeimage img,.myskils img{
+    margin-top: 40px;
+    width: 90%;
+}
+.aboutmeimage,.myskilsimage{
+    width: 30%;
+}
+.aboutmetext{
+    width: 35%;
+}
+.aboutmetext h1,.myskilstext h1{
+    font-size: 50px;
+}
+.aboutmetext h3{
+    font-size: 30px;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.intro2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ff000043;
+    border-left: 5px solid #ff0000;
+    line-height: 1.3;
+    color: #ffffff;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    border-radius: 8px;
+}
+.intro2 p {
+    font-size:20px;
+    margin: 0;
+    text-align: justify;
+}
+.myskilstext{
+    width: 40%;
+}
+.skilscontent img{
+    height: 70px;
+    width: 70px;
+    margin-left: 50px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    border: #ff0000 solid 2px;
+    box-shadow: 0px 0px 20px red;
+}
+.skilscontent td h2{
+    white-space: nowrap;
+    overflow: hidden; /* Optional: hides overflow if text is too long */
+    text-overflow: ellipsis;
+    font-size: 30px;
+    text-decoration: underline red;
+}
+/*======================================================*/
+/*=====================FIN+SECTION2=====================*/
+/*======================================================*/
+
+/*======================================================*/
+/*===================START+SECTION3=====================*/
+/*======================================================*/
+.section3 {
+    background-color: #000000;
+    height:auto;
+    width: 100%;
+}
+
+.services-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-box {
+    border-left: 5px solid rgb(255, 0, 0);
+    background-color:#ff000043;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(255, 2, 2, 0.582);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+/* Animation for service boxes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 30px rgba(227, 15, 15, 0.979);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #2fea35;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 1.5em;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 1em;
+    color: #fffefe;
+    line-height: 1.6;
+}
+
+/* Delay animations for each box */
+.service-box:nth-child(1) { animation-delay: 0.1s; }
+.service-box:nth-child(2) { animation-delay: 0.2s; }
+.service-box:nth-child(3) { animation-delay: 0.3s; }
+.service-box:nth-child(4) { animation-delay: 0.4s; }
+.section3 h1{
+    padding-top: 100px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
+}
+/*======================================================*/
+/*=====================FIN+SECTION3=====================*/
+/*======================================================*/
+
+/*======================================================*/
+/*===================START+SECTION4=====================*/
+/*======================================================*/
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.contact-container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Title styling */
+.contact-container h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input and textarea styling */
+.contact-form input, .contact-form textarea {
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease;
+    box-shadow: 0 0 8px #ff0000;
+}
+
+/* Input focus effect */
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #00ffbf;
+    box-shadow: 0 0 20px #00ffbf;
+}
+
+/* Textarea size */
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Submit button styling */
+.contact-form button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 25px rgb(255, 0, 0);
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+    color: #000000;
+    background-color: #00ffbf;
+    box-shadow: 0 0 20px rgba(0, 255, 191, 0.8);
+}
+.contact-form button:active {
+    background-color: #00ff66;
+}
+/*======================================================*/
+/*=====================FIN+SECTION4=====================*/
+/*======================================================*/
+

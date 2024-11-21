@@ -1,0 +1,450 @@
+/*======================================================*/
+/*===================START+SECTION1=====================*/
+/*======================================================*/
+
+
+/*=================================================*/
+/*===============menu-navbar-dropdown==============*/
+/*=================================================*/
+@media (max-width:1090px) and (min-width:100px) {
+.section1{
+    height: auto;
+}
+/*=================================================*/
+/*===============menu-navbar-dropdown==============*/
+/*=================================================*/
+#button{
+    display: block;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 82px;
+    z-index: 50;
+}
+ul{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+
+}
+ul.is-active{
+    display: block;
+}
+li{
+    display: block;
+    text-align: center;
+    margin: 50px;
+
+}
+.a2{
+    display: block;
+}
+#contact{
+    display: none;
+}
+/*================START+DROPDOWEN=========================*/
+.dropdown-content {
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #333;
+    border-radius: 10px;
+    min-width: 160px;
+    z-index: 100;
+ }
+/*===================FIN+DROPDOWEN=================*/
+}
+/*===================2024/10/31====================*/
+/*===============menu-navbar-dropdown==============*/
+/*==================fin-menu=======================*/
+
+
+@media (max-width:1090px)and (min-width:100px){
+    
+.content1{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.text{
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+.text h1{
+    font-size: 35px;
+}
+.text h3{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.intro {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ff000043;
+    border-left: 5px solid #ff0000;
+    line-height: 1.6;
+    color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(230, 12, 12, 0.38);
+    border-radius: 8px;
+}
+.intro h2 {
+    text-align: center;
+    font-size: 23px;
+    color: #ff0101;
+    margin-bottom: 15px;
+}
+.intro p {
+    font-size: 1em;
+    margin: 0;
+    text-align: justify;
+}
+.socialmedia{
+    display: flex;
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+#socialmedia{
+    width: 70px;
+    height: 70px;
+    margin-left: 0px;
+    transition: 0.4s;
+    border: transparent solid 5px;
+}
+.image{
+    width: 100%;
+    height: 50%;
+    padding-top: 2%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+.image1{
+    width: 400px;
+    border: solid 2px transparent;
+    background-color: #ff0000;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+.image1:hover{
+    background-color: #000000;
+    border: #ff0000 solid 2px;
+    box-shadow: 0px 0px 30px red;
+    transform:scale(1.1);
+}
+.cv a h5{
+    background-color: red;
+    border: solid red;
+    border-radius:30px ;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+}
+@media (max-width:746px) and (min-width:484px) {
+    .image{
+        padding-top: 10%;
+    }
+    .image1{
+        width: 350px;
+    }
+}
+@media (max-width:484px) and (min-width:100px) {
+    .image{
+        padding-top: 26%;
+    }
+    .image1{
+        width: 300px;
+    }
+}
+@media (max-width:400px) and (min-width:100px) {
+    .socialmedia{
+        display: flex;
+        padding-top:20px ;
+        padding-bottom: 20px;
+    }
+    #socialmedia{
+        width: 58px;
+        height: 58px;
+        border: transparent solid 2px;
+    }
+}
+@media (max-width:380px) and (min-width:320px) {
+    .text h1{
+        font-size: 27px;
+    }
+    .text h3{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:320px) and (min-width:100px) {
+    .text h1{
+        font-size: 24px;
+    }
+    .text h3{
+        font-size: 19px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+/*======================================================*/
+/*=====================FIN+SECTION1=====================*/
+/*======================================================*/
+
+/*======================================================*/
+/*===================START+SECTION2=====================*/
+/*======================================================*/
+@media (max-width:1090px) and (min-width:100px) {
+    .aboutme , .myskils{
+        width: 100%;
+    }
+    .aboutmeimage,.myskilsimage{
+        display: none;
+    }
+    .aboutmetext{
+        width: 100%;
+    }
+    .skilscontent{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutmetext h1,.myskilstext h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .aboutmetext h3{
+        text-align: center;
+        font-size: 30px;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .intro2 {
+        width: 90%;
+        margin:  auto;
+        padding: 10px;
+        background-color: #ff000043;
+        border-left: 5px solid #ff0000;
+        line-height: 1.3;
+        color: #ffffff;
+        box-shadow: 0px 4px 6px rgb(0, 0, 0);
+        border-radius: 8px;
+    }
+    .intro2 p {
+        font-size:16px;
+        margin: 0;
+        text-align: justify;
+    }
+    .myskilstext{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skilscontent img{
+        height: 70px;
+        width:70px ;
+        background-color: #ff0000;
+        border-radius: 100%;
+        border: #ff0000 solid 2px;
+        box-shadow: 0px 0px 20px red;
+    }
+    .skilscontent td h2{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 30px;
+        margin-left: 0;
+        text-decoration: underline red;
+    
+    }
+    td{
+        width:auto;
+    }
+}
+@media (max-width:670px) and (min-width:444px) {
+    .aboutmetext h1,.myskilstext h1{
+        font-size: 35px;
+    }
+    .aboutmetext h3{
+        font-size: 23px;
+    }
+    .intro2 p {
+        font-size:15px;
+    }
+    .skilscontent img{
+        margin-top: 70px;
+        height: 70px;
+        width:70px ;
+        background-color: #ff0000;
+        border-radius: 100%;
+        border: #ff0000 solid 2px;
+        box-shadow: 0px 0px 20px red;
+    }
+    .skilscontent #h2{
+        padding-top: 10px;
+        position: absolute;
+    }
+    .skilscontent td h2{
+        font-size: 30px;
+        text-align: center;
+    
+    }
+    #for{
+        display: block;
+    }
+}
+@media (max-width:444px) and (min-width:100px) {
+    .aboutmetext h1,.myskilstext h1{
+        font-size: 35px;
+    }
+    .aboutmetext h3{
+        font-size: 23px;
+    }
+    .intro2 p {
+        font-size:15px;
+    }
+    .skilscontent img{
+        margin-top: 70px;
+        height: 60px;
+        width:60px ;
+        background-color: #ff0000;
+        border-radius: 100%;
+        border: #ff0000 solid 2px;
+        box-shadow: 0px 0px 20px red;
+    }
+    .skilscontent #h2{
+        padding-top: 10px;
+        position: absolute;
+    }
+    .skilscontent td h2{
+        font-size: 25px;
+        text-align: center;
+    
+    }
+    #for{
+        display: block;
+        block-size: 70px;
+    }
+
+}
+/*======================================================*/
+/*=====================FIN+SECTION2=====================*/
+/*======================================================*/
+
+/*======================================================*/
+/*===================START+SECTION3=====================*/
+/*======================================================*/
+@media (max-width:1090px) and (min-width:100px){
+.services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-box {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+/* Animation for service boxes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #2fea35;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 1.5em;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 1em;
+    color: #fffefe;
+    line-height: 1.6;
+}
+
+/* Delay animations for each box */
+.service-box:nth-child(1) { animation-delay: 0.1s; }
+.service-box:nth-child(2) { animation-delay: 0.2s; }
+.service-box:nth-child(3) { animation-delay: 0.3s; }
+.service-box:nth-child(4) { animation-delay: 0.4s; }
+
+/* Responsive design */
+.section3 h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+}
+}
+/*======================================================*/
+/*=====================FIN+SECTION3=====================*/
+/*======================================================*/
+
+/*======================================================*/
+/*===================START+SECTION4=====================*/
+/*======================================================*/
+@media (max-width:1090px) and (min-width:100px){
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:600px;
+    background-color: #000000;
+}
+.contact-container h1 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+}
+/*======================================================*/
+/*=====================FIN+SECTION4=====================*/
+/*======================================================*/
